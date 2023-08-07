@@ -1,0 +1,30 @@
+{%  extends "base.html" %}
+<body>
+    {% block dynamiccontent %}
+    <div>
+        {% if success %}
+            {{ success }}
+        {% endif %}
+        {% if error %}
+            {{ error }}
+        {% endif %}
+        <br>
+        <form action="/fileupload" method="post" enctype="multipart/form-data">
+            <input type="file" name="givenfile" id="givenfile"><br>
+            <br>
+            <input type="email" style="height: 2em; width:18em" name="emailid1" id="emailid1" placeholder="Enter User 1 Emailid"><br>
+            <br>
+            <input type="email" style="height: 2em; width:18em" name="emailid2" id="emailid2" placeholder="Enter User 2 Emailid"><br>
+            <br>
+            <input type="email" style="height: 2em; width:18em" name="emailid3" id="emailid3" placeholder="Enter User 3 Emailid"><br>
+            <br>
+            <input type="email" style="height: 2em; width:18em" name="emailid4" id="emailid4" placeholder="Enter User 4 Emailid"><br>
+            <br>
+            <input type="email" style="height: 2em; width:18em" name="emailid5" id="emailid5" placeholder="Enter User 4 Emailid"><br>
+            <br>
+            <br>
+            <input type="submit" style="height: 2em; width:18.7em; background-color: rgb(121, 121, 229); color:white"  name="submitbutton" value="Send">
+        </form>
+    </div>
+    {% endblock %}
+</body>

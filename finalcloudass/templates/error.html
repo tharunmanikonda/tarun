@@ -1,0 +1,14 @@
+{%  extends "base.html" %}
+<body>
+    {% block dynamiccontent %}
+    <h2>{{ headings }}</h2>
+    {% if error %}
+    <ul>
+        {% for err in error %}
+            <li>{{ err }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    <h3>Click on the Header buttons to go to desired pages</h3>
+    {% endblock %}
+</body>

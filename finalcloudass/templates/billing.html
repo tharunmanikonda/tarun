@@ -1,0 +1,15 @@
+{%  extends "base.html" %}
+<body>
+    {% block dynamiccontent %}
+    <div>
+        {% if success %}
+            {{ success }}
+        {% endif %}
+        {% if files %}
+            {% for item in files%}
+                {{ item }} <br>
+            {% endfor %}
+        {% endif %}
+    </div>
+    {% endblock %}
+</body>

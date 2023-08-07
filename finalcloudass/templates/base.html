@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base</title>
+</head>
+<body>
+    <header style="background-color: grey; height: 2em">
+        <a href="/"><button style="margin-top: 5px; margin-left:5px"><b>Signup</b></button></a>
+        <a href="/signin"><button style="margin-top: 5px; margin-left:5px"><b>Signin</b></button></a>
+        <a href="/billing"><button style="margin-top: 5px; margin-left:5px"><b>Billing Details</b></button></a>
+    </header>
+    <br>
+    {% block dynamiccontent %}
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,19 @@
+{%  extends "base.html" %}
+<body>
+    {% block dynamiccontent %}
+    <div>
+        {% if success %}
+            {{ success }}
+        {% endif %}
+        <form action="/signup" method="post" enctype="multipart/form-data">
+            <input type="email" style="height: 2em; width:18em" name="emailid" id="emailid" placeholder="Enter your email Id"><br>
+            <br>
+            <input type="password" style="height: 2em; width:18em"  name="password" id="password" placeholder="Enter your password"><br>
+            <br>
+            <input type="password" style="height: 2em; width:18em"  name="cpassword" id="cpassword" placeholder="Enter Confirm Password"><br>
+            <br>
+            <input type="submit" style="height: 2em; width:18.7em; background-color: rgb(121, 121, 229); color:white"  name="submitbutton" value="Signup">
+        </form>
+    </div>
+    {% endblock %}
+</body>
